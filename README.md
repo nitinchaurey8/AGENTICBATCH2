@@ -1,6 +1,19 @@
 # AGENTICBATCH2
 
-This repository contains hands-on notebooks and practice material for **LangChain**, **LangGraph**, **RAG**, vector databases, and agentic AI workflows.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange)
+![Status](https://img.shields.io/badge/Status-Learning%20Repo-success)
+
+Hands-on notebooks and practice material for **LangChain**, **LangGraph**, **RAG**, vector databases, and agentic AI workflows.
+
+## Table of Contents
+
+- [Repository Overview](#repository-overview)
+- [Quick Start](#quick-start)
+- [Notebook Index](#notebook-index)
+- [Requirements Files](#requirements-files)
+- [Notes](#notes)
+- [License](#license)
 
 ## Repository Overview
 
@@ -10,9 +23,9 @@ This repository contains hands-on notebooks and practice material for **LangChai
 - `2.4-VectorDatabase/` — FAISS and Pinecone notebook examples.
 - `Agentic-2.0-main/` — Extended assignments and agentic workflow material.
 - `data/`, `data2/` — Local text resources used by notebooks.
-- Multiple `requirements*.txt` files — dependency sets for different sessions/modules.
+- `requirements*.txt` — dependency sets for different sessions/modules.
 
-## Getting Started
+## Quick Start
 
 1. Clone the repository:
 
@@ -21,34 +34,66 @@ git clone https://github.com/nitinchaurey8/AGENTICBATCH2.git
 cd AGENTICBATCH2
 ```
 
-2. Create and activate a Python environment.
+2. Create and activate a virtual environment:
 
-3. Install dependencies (choose the file relevant to your notebook/session):
+```bash
+python -m venv .venv
+```
+
+Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+3. Install dependencies (start with base):
 
 ```bash
 pip install -r requirements.txt
 ```
 
-You may also use module-specific files such as:
-- `requirements_lg.txt`
-- `requirements_lc.txt`
-- `requirements_rg.txt`
-- `requirements_py.txt`
-
 4. Open notebooks in VS Code or Jupyter and run cells in order.
+
+## Notebook Index
+
+- Core LangGraph assignment:
+  - `Agentic-2.0-main/langgraph/langgraph_class_2 assign.ipynb`
+- LangGraph series:
+  - `Agentic-2.0-main/langgraph/langgraph_class_3.ipynb`
+  - `Agentic-2.0-main/langgraph/langgraph_class_4.ipynb`
+  - `Agentic-2.0-main/langgraph/langgraph_class_5.ipynb`
+  - `Agentic-2.0-main/langgraph/langgraph_class_6_multiagent.ipynb`
+  - `Agentic-2.0-main/langgraph/langgraph_class_7_supervisor_multiagent.ipynb`
+  - `Agentic-2.0-main/langgraph/langgraph_class_8_humaninloop.ipynb`
+- LangChain basics:
+  - `2-Langchain Basics/gettingstartedlangchain.ipynb`
+  - `2-Langchain Basics/2.1-DataIngestion/dataingestion.ipynb`
+  - `2-Langchain Basics/2.2-DataTransformer/2.2.1-Recursivetextsplitter.ipynb`
+- Vector DB examples:
+  - `2.4-VectorDatabase/FAISS/code.ipynb`
+  - `2.4-VectorDatabase/Pinecone/code.ipynb`
+
+## Requirements Files
+
+Use the file that matches your notebook/module context:
+
+- `requirements.txt` (base)
+- `requirements_lg.txt` (LangGraph-focused)
+- `requirements_lc.txt` (LangChain-focused)
+- `requirements_rg.txt` (RAG-focused)
+- `requirements_py.txt` (Python utilities)
 
 ## Notes
 
 - Some notebooks require API keys (for example, LLM providers).
 - Some workflows require internet access (for web tools/search).
 - Vector DB notebooks may create local index artifacts (for example FAISS index files).
-
-## Suggested Entry Points
-
-- LangGraph assignment notebook:
-  - `Agentic-2.0-main/langgraph/langgraph_class_2 assign.ipynb`
-- LangGraph class notebooks:
-  - `Agentic-2.0-main/langgraph/`
 
 ## License
 
